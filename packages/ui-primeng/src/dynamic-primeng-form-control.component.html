@@ -197,6 +197,7 @@
                         (onBlur)="onBlur($event)"
                         (onChange)="onValueChange($event)"
                         (onFocus)="onFocus($event)"></p-dropdown>
+						<label *ngSwitchCase=\"7\" class=\"lblpdropdown\" [for]=\"model.id\">{{model.label}}</label>
 
             <!-- EDITOR ----------------------------------------------------------------------------------------------->
             <p-editor *ngSwitchCase="8" #pEditor
